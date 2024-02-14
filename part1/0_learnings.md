@@ -44,3 +44,51 @@
 ![alt text](image-5.png)
 - Note : order of css files is important
     - if we give `bootstrap.min.css` first and then `style.css` , the `style.css` will override the `bootstrap.min.css`
+
+- https://stackshare.io/tech-stack-file
+    - website where you can see various tech stacks used by various companies
+
+👉 Bootstrap Documentation (https://getbootstrap.com/docs/4.5/lay...)
+👉 Bootstrap Viewport (Extension) (https://chrome.google.com/webstore/de...)
+👉 Bootstrap Grid Overlay (Extension) (https://chrome.google.com/webstore/de...)
+👉 Bootstrap Grid GUI Tool (http://shoelace.io/)
+
+
+- in bootstrap grid, all the content is divided into 12 columns
+    - so upon building the website, we can divide the content into 12 columns
+
+- bootstrap is built over flexbox
+    - so we can use flexbox properties in bootstrap
+    - for example, we can use `justify-content-center` to center the content
+    - we can use `align-items-center` to center the content vertically  in the container
+    - we can use `d-flex` to make the container as flex container
+    - we can use `flex-column` to make the container as column flex container
+    - flexbox properties are used to align the content in the container
+        - `justify-content-center` -> to align the content horizontally
+
+- css flex box is a pre requisite for this  video, so 
+    - https://youtube.com/watch?v=LkBlhvg2hqI
+        - watch this video to understand flexbox
+        - git link for the video is 
+            - https://github.com/anburocky3/CSS3-from-scratch-cyberdude/blob/31-CSS-Flexbox/css/style.css
+    - flex box is 2d  whereas grid is 3d with a z axis
+    ![alt text](image-6.png)
+    - ![alt text](image-7.png)
+    - flexbox  properties
+        - ![alt text](image-8.png)
+            - flex-direction
+                - left and right
+                - top and bottom
+        - flex wrap 
+            - ![alt text](image-9.png)
+            - it is used to wrap the content
+            - if we give `flex-wrap: wrap` , the content will wrap to the next line
+        - justify-content
+            - ![alt text](image-10.png)
+            - it is used to align the content horizontally
+        -  align items
+            - ![alt text](image-11.png)
+        - align content
+            - ![alt text](image-12.png)
+        - align self
+            - ![alt text](image-13.png)
