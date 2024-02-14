@@ -7,6 +7,28 @@
   
   .flex-container{
     background-color: lightcoral;
+    display:flex;
+    height: 400px;
+    /* align-items: center; this  is  for column wise */
+    /* align-items: flex-start this will align to top left ; */
+    /* align-items: flex-end; will align to bottom  left */
+    /* align-self: flex-start; column wise start */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* default direction is row */
+
+    /* flex-direction: row-reverse ;
+    flex-wrap: wrap; */
+    /* this will mirror  the  wrap */
+
+    flex-flow:column wrap;
+
+    /* justify-content: flex-end; */
+
+    /* align-content: center ; */
+    align-content: flex-end;
+
+    /* justify-content: center; this is for row */
   }
   
 
@@ -17,4 +39,9 @@
     font-size: 30px;
     text-align: center;
     color: #000;
+    float:left; 
+    /* This will  make the divs to float to the left, but it will remove the background  */
+    
+     
+    
   }

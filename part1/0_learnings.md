@@ -92,3 +92,9 @@
             - ![alt text](image-12.png)
         - align self
             - ![alt text](image-13.png)
+
+-  this will add 15 div with count
+    - `div*15{Box $}`
+
+- https://flexboxfroggy.com/
+    - game to learn flex-box
