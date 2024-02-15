@@ -26,91 +26,70 @@
 </head>
 
 <body>
-    <div class="container p50">
-        <h1>Welcome to Bootstrap Course</h1>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
 
-        <p>lets start learning Bootstrap.</p>
-    </div>
-    <div class="container color-1 height-500 px-5">
         
-        <h3 >Welcome Gokul 
-            <small class="text-muted">(Admin)</small>
-        </h3>
-        <p class="leads">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, adipisci ullam labore voluptatibus nam officiis debitis optio vel nulla quia deserunt doloribus illo corrupti, earum itaque et perferendis quo eligendi!</p>
+            <a href="/" class="navbar-brand">
+               
+                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="30" loading="lazy"
+                        class="d-inline-block align-top">
+                      BootStrap Tamil</a>
 
-        <!-- table>thead>tr>td*3 -->
-        <div class="table-responsive">
-            <table class="table table-sm table-bordered table-hover table-dark table-striped text-center">
-                <!-- table-sm will make the table sm according to   -->
-                <thead class="thead-light"> 
-                    <!-- dont  use thead dark, instead use table-dark -->
-                    <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Course</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Aajith</td>
-                        <td>js  course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>djith</td>
-                        <td>css course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>Html 5 course</td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar">
+                <!-- use data-bs-toggle -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="myNavBar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- use ms-auto  instead  of ml-auto -->
+                    <li class="nav-item ">
+                        <a href="/index.html" class="nav-link active">Home</a>
+                        <!-- in the video, he puts active in nav-item ,but  it will work for nav-link -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Help
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Facebook</a></li>
+                          <li><a class="dropdown-item" href="#">Youtube</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <!--  dividor is to get  a line on clicking -->
+                          <li><a class="dropdown-item" href="#">GitHub</a></li>
+                        </ul>
+                      </li>
+                      <!-- if the drop down is not working, add the bundle.min.js link in the bottom -->
+              
+                    <li class="nav-item">
+                        <a href="/blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
-       
-        
-    </div>
+        </nav>
+
+    </header>
+
+
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
 </body>
 
 </html>
