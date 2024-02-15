@@ -98,3 +98,13 @@
 
 - https://flexboxfroggy.com/
     - game to learn flex-box
+
+- this will add three li to an ol
+    - `ol>li*3`
+
+- type `lorem` and press tab to get the lorem text
+    - every time we press tab, we will get a new lorem text
+    - the text will not be same, it will be different every time, because it is a random text
+
+- link to shoelace website
+    - https://shoelace.komercialize.com.br/
