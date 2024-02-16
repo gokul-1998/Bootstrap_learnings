@@ -111,3 +111,8 @@
 
 - ![alt text](image-14.png)
     - try to develop this invoice
+
+- emmet for bootstrap btn
+    - `btn.btn.btn-success`
+
+- use `Alt+z` for instant wordwrap
