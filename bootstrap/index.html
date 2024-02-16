@@ -1,145 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap course in Tamil</title>
+
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!--  min.css means minified css (compressed) -->
-    <style>
-      ol > li {
-        display: inline;
-        padding-right: 10px;
-      }
+</head>
 
-      .grid-layouts.container {
-        border: 1px solid #d41717 !important;
-      }
-    </style>
-  </head>
-
-  <body>
+<body>
+    <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-          <a href="/" class="navbar-brand">
-            <img
-              src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
-              alt="Bootstrap"
-              width="30"
-              height="30"
-              loading="lazy"
-              class="d-inline-block align-top"
-            />
-            BootStrap Tamil</a
-          >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#myNavBar"
-          >
-            <!-- use data-bs-toggle -->
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                <a href="/" class="navbar-brand">
+                    <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                        alt="Bootstrap Tamil" loading="lazy" class="d-inline-block align-top">
+                    Bootstrap Tamil</a>
 
-          <div class="navbar-collapse collapse" id="myNavBar">
-            <ul class="navbar-nav ms-auto">
-              <!-- use ms-auto  instead  of ml-auto -->
-              <li class="nav-item">
-                <a href="/index.html" class="nav-link active">Home</a>
-                <!-- in the video, he puts active in nav-item ,but  it will work for nav-link -->
-              </li>
-              <li class="nav-item">
-                <a href="/about.html" class="nav-link">About</a>
-              </li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar"
+                    aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Help
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Facebook</a></li>
-                  <li><a class="dropdown-item" href="#">Youtube</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <!--  dividor is to get  a line on clicking -->
-                  <li><a class="dropdown-item" href="#">GitHub</a></li>
-                </ul>
-              </li>
-              <!-- if the drop down is not working, add the bundle.min.js link in the bottom -->
-
-              <li class="nav-item">
-                <a href="/blog.html" class="nav-link">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="/contact.html" class="nav-link disabled">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- content -->
-    <div class="jumbotron">
-      <div class="container">
-    <h1 class="display-4">Hello there</h1>
-    <p class="lead">welcome to bootstrap tutorial in தமிழ்</p>
-    <hr class="mt-5" />
-    <p>Before learning, bootstrap, learn HTML, CSS, and JS</p>
-    <button class="btn btn-primary">Getting Started</button>
-
-    <hr />
-
-    <h4>Web designing course</h4>
-    <p>learn these before jumping into backend technologies</p>
-
-    <div class="btn-group btn-group-lg" role="group" aria-label="web design group buttons">
-        <button type="button" class="btn btn-primary">HTML 5</button>
-        <button type="button" class="btn btn-primary">CSS 3</button>
-
-        <div class="btn-group" role="group" aria-label="JS buttons">
-            <button type="button" class="btn btn-primary dropdown-toggle" id="myBtn" data-bs-toggle="dropdown">
-                JS
-            </button>
-
-            <div class="dropdown-menu" aria-labelledby="myBtn">
-                <a href="#" class="dropdown-item">Basic</a>
-                <a href="#" class="dropdown-item">Intermediate</a>
-                <a href="#" class="dropdown-item">Expert</a>
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="/index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Facebook</a>
+                                <a class="dropdown-item" href="#">YouTube</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Github</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contact.html" class="nav-link disabled">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Hello There!</h1>
+            <p class="lead">Welcome to Bootstrap Tutorials in தமிழ் <i class="fa fa-smile-o"></i> </p>
+            <hr class="mt-5">
+            <p>Before learning bootstrap, learn the HTML, CSS & Javascript(optional)</p>
+            <button class="btn btn-primary"> <i class="fa fa-home" aria-hidden="true"></i>
+                Getting Started!</button>
         </div>
     </div>
-    <!-- use role=group and aria label for screen reader -->
 
-    <hr />
-</div>
 
-    </div>
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
 
-    <!-- <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="./assets/js/bootstrap.bundle.min.js"></script> -->
-    <!--  -->
-  </body>
 </html>
